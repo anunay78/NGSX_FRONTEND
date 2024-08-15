@@ -1,0 +1,18 @@
+<app-nav></app-nav>
+<div class="container-fluid">
+  <div class="mt-4">
+    <h2 class="text-center bg-dark text-light">Welcome To Indian News</h2>
+  </div>
+  <div class="row">
+    <div *ngFor="let news of news" class="col-md-4 col-6 my-4">
+      <div class="card" style="width: 100%; height: 500px;">
+        <img *ngIf="news.image_url" src="{{news.image_url}}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{news.title}}</h5>
+          <p class="card-text">{{news.description}}</p>
+          <a href="{{news.source_url}}" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

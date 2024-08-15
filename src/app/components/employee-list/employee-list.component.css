@@ -1,0 +1,11 @@
+.add_employee_btn, .edit_employee_btn{
+  border: 1px solid green;
+}
+
+.delete_employe_btn{
+  border: 1px solid red;
+}
+
+.back_employee_btn{
+  border: 1px solid skyblue;
+}

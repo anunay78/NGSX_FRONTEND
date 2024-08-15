@@ -1,0 +1,17 @@
+<app-nav></app-nav>
+<div class="container">
+  <div class="d-flex justify-content-end">
+    <h2>Total Results : {{totalLength}}</h2>
+  </div>
+  <div *ngFor="let photo of photos$ | async" class="row my-5">
+
+    <div class="col-4">
+      <div><img class="img-fluid" src="{{photo.thumbnailUrl}}" alt=""></div>
+    </div>
+
+    <div class="col-8 mt-0">
+      <p>{{photo.title}}</p>
+      <p>Album Id :  {{photo.albumId}}</p>
+    </div>
+  </div>
+</div>
